@@ -12,7 +12,7 @@
 
     <div class="formValidationGroup">
         @Html.LabelFor(Model => Model.FirstName)
-        @Html.TextBoxFor(m => m.FirstName, new { placeholder = "(e.g. John, Josh, etc.)" })
+        @Html.TextBoxFor(m => m.FirstName, new { placeholder = "(e.g. John, Josh, etc.)" }) <br />
         @Html.ValidationMessageFor(m => m.FirstName)
     </div>
     <div class="formValidationGroup">

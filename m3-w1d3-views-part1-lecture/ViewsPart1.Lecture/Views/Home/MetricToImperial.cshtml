@@ -1,13 +1,13 @@
 ﻿
-@{
+@*@{
     Layout = null;  //<-- ignore this for now, it is used to create reusable site layouts
-}
+}*@
 
 @{ 
     int maxValue = int.Parse(Request.QueryString["maxValue"]);
     int stepValue = int.Parse(Request.QueryString["stepValue"]);
-}
 
+}
 
 <!DOCTYPE html>
 
@@ -34,13 +34,18 @@
                 through the for-loop.
             *@
 
+
             @for (int i = 0; i <= maxValue; i += stepValue)
             {
                 <tr>
-                    <td>@i kph</td> <!-- Print out i kph-->
-                    <td>@(i * 0.62) mph</td> <!-- Print out (i * 0.62) mph-->
+                   <td>@i kph</td> <!-- Print out i kph-->
+                   <td>@(i * 0.62) mph</td> <!-- Print out (i * 0.62) mph-->
                 </tr>
             }
+
+
+
+
         </tbody>
     </table>
 </body>

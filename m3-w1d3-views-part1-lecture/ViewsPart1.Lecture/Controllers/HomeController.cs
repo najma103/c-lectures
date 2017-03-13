@@ -40,13 +40,13 @@ namespace ViewsPart1.Lecture.Controllers
             return View("MetricToImperial");
         }
 
-        //// GET: Home/Convert/Id
+        // GET: Home/Convert/Id
         //public string Convert(int id)
         //{
         //    return "Welcome " + id;
         //}
 
-        // GET: Home/Convert/Id
+        //GET: Home/Convert/Id
         public ActionResult Convert()
         {
             return View("Convert");
