@@ -22,5 +22,24 @@ namespace TDDLecture
     //24 -> returns [2, 2, 2, 3]
     public class KataPrimeFactors
     {
+        public int[] Factorize(long inputValue)
+        {
+            List<int> Factors = new List<int>();
+            for (int i = 2; i <= inputValue; i++)
+            {
+                int[] factors = new int[0];
+                if (inputValue % i == 0)
+                {
+                    while (inputValue % i == 0)
+                    {
+                        Factors.Add(i);
+                        inputValue = inputValue / i;
+                    }
+                }
+            }
+            int[] FactorArray = Factors.ToArray();
+            return FactorArray;
+
+        }
     }
 }

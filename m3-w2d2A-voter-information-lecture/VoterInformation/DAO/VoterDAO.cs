@@ -9,7 +9,7 @@ namespace VoterInformation.DAO
 {
     public class VoterDAO
     {
-        string connectionString = @"Data Source=DESKTOP-QSBFLBV;Initial Catalog=VoterData;Integrated Security=True";
+        string connectionString = @"Data Source=DESKTOP-58F8CH1\SQLEXPRESS;Initial Catalog=VoterData;Integrated Security=True";
         string SQL_VotersforStreet = "SELECT FIRSTNAME, LASTNAME, RES_HOUSE, RES_STREET FROM Voter WHERE RES_STREET LIKE CONCAT('%',@streetName,'%') ORDER BY LASTNAME, FIRSTNAME;";
 
 

@@ -1,9 +1,7 @@
 ﻿/* ##################################################
-<<<<<<< HEAD
 Attaching Event Handlers via Javascript
 =======
 Attaching Event Handlers via Javascript (The Old Way)
->>>>>>> 159df7f3d8b43161366ad6aaad4d1054c5d07473
 ################################################## */
 
 // Blur
